@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 파비콘 링크, 부트스트랩CSS, 부트스트랩JS -->
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+
+		<title>포지션</title>
+		<style>
+			div > div {
+				min-height: 70px;
+				min-width: 70px;
+				margin: 20px;
+				display: inline-block;
+				background-color: #1e1e1e;
+				color: white;
+			}
+			div{
+				min-width: 50px;
+				min-height: 50px;
+			}
+			body {
+				margin-bottom: 500px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<!-- absolute 절대 좌표, relative 상대좌표 -->
+		<!-- absolute를 사용하려면 부모 요소에 relative를 작성 -->
+		<div class="position-relative border border-5 border-danger" style="height: 100vh;">
+			<!-- 절대좌표의 기준의 부모중 position 있는 박스 없으면 화면 기준 -->
+			<div class="position-absolute">1</div>
+			<div class="position-absolute bottom-50 end-50">2</div>
+			<div class="position-absolute bottom-0 end-0">3</div>
+			<!-- translate-middle 해당부분의 중앙에 배치 -->
+			<div class="position-absolute top-50 start-50 translate-middle">4</div>
+			<div class="position-absolute top-o end-0">5</div>
+			<!-- <div class="position-absolute top-100 start-0"></div> -->
+		</div>
+
+		<!-- fixed는 항상 고정 좌표(화면 스크롤을 내려도 항상 해당 위치에서 고정) -->
+		<div class="position-fixed bg-primary top-50 start-50">1</div>
+
+		<button class="btn btn-primary position-relative">
+			Mails
+			<span class="position-absolute bg-secondary badge rounded-pill top-0 start-100 translate-middle">+99</span>
+		</button>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 파비콘 링크, 부트스트랩CSS, 부트스트랩JS -->
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+
+		<title>캐러셀</title>
+	</head>
+
+	<body>
+		<!-- 기본예제 -->
+		<!-- 자동재생 넣으려면 data-bs-ride="carousel"추가 -->
+		<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+			<!-- 인디케이터 전체를 감싸는 id값고 data-bs-target 이름이 동일해야 인디케이터 적용-->
+			<!-- 이미지 아래 버튼 -->
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  </div>
+			<!-- 이너 : 이미지 슬라이더 -->
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="../img/slide1.jpg" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item">
+				<img src="../img/slide2.jpg" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item">
+				<img src="../img/slide3.jpg" class="d-block w-100" alt="...">
+			  </div>
+			</div>
+			<!-- 왼쪽 버튼 -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<!-- 오른쪽버튼 -->
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+	</body>
+</html>

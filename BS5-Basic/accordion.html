@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 파비콘 링크, 부트스트랩CSS, 부트스트랩JS -->
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+
+		<title>아코디언</title>
+		<style>
+			body {
+				padding: 3rem;	/* em, rem은 폰트사이즈의 배수 */
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="accordion" id="accordionParent">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" data-bs-target="#collapseOne" data-bs-toggle="collapse">
+						Lorem ipsum dolor sit amet.
+					</button>
+				</h2>
+				<div class="accordion-collapse collapse show" id="collapseOne" data-bs-parent="#accordionParent">
+					<div class="accordion-body">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officia itaque ut blanditiis sed? Neque praesentium accusamus sint, vel omnis inventore doloremque dolorum ducimus nulla.</p>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse">
+						Lorem ipsum dolor sit amet.
+					</button>
+				</h2>
+				<div class="accordion-collapse collapse" id="collapseTwo" data-bs-parent="#accordionParent">
+					<div class="accordion-body">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officia itaque ut blanditiis sed? Neque praesentium accusamus sint, vel omnis inventore doloremque dolorum ducimus nulla.</p>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" >
+						Lorem ipsum dolor sit amet.
+					</button>
+				</h2>
+				<div class="accordion-collapse collapse" id="collapseThree" data-bs-parent="#accordionParent">
+					<div class="accordion-body">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officia itaque ut blanditiis sed? Neque praesentium accusamus sint, vel omnis inventore doloremque dolorum ducimus nulla.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<br><hr><br>
+
+		<div class="accordion accordion-flush" id="accordionParent2">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" data-bs-target="#collapseOne2" data-bs-toggle="collapse">
+						Lorem ipsum dolor sit amet.
+					</button>
+				</h2>
+				<div class="accordion-collapse collapse show" id="collapseOne2" data-bs-parent="#accordionParent2">
+					<div class="accordion-body">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officia itaque ut blanditiis sed? Neque praesentium accusamus sint, vel omnis inventore doloremque dolorum ducimus nulla.</p>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" data-bs-target="#collapseTwo2" data-bs-toggle="collapse">
+						Lorem ipsum dolor sit amet.
+					</button>
+				</h2>
+				<div class="accordion-collapse collapse" id="collapseTwo2" data-bs-parent="#accordionParent2">
+					<div class="accordion-body">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officia itaque ut blanditiis sed? Neque praesentium accusamus sint, vel omnis inventore doloremque dolorum ducimus nulla.</p>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" data-bs-target="#collapseThree2" data-bs-toggle="collapse" >
+						Lorem ipsum dolor sit amet.
+					</button>
+				</h2>
+				<div class="accordion-collapse collapse" id="collapseThree2" data-bs-parent="#accordionParent2">
+					<div class="accordion-body">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officia itaque ut blanditiis sed? Neque praesentium accusamus sint, vel omnis inventore doloremque dolorum ducimus nulla.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

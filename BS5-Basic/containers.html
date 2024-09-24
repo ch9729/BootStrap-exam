@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 파비콘 링크, 부트스트랩CSS, 부트스트랩JS -->
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+
+		<title>컨테이너</title>
+		<style>
+			div {
+				padding: 1rem 0;
+				font-size: 40px;
+				color: white;
+				text-align: center;
+				margin-bottom: 1rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 마진없는 꽉 차는 컨테이너 -->
+		<div class="container-fluid bg-secondary">.container-fluid</div>
+		<!-- 기본 컨테이너 (어느정도 화면 비율이 작아지면 마진이 사라진다)-->
+		<div class="container bg-primary">.container</div> 
+		<!-- 일반 컨테이너와 동일 -->
+		<div class="container-sm bg-danger">.container-sm</div>
+		<div class="container-md bg-info">.container-md</div>
+		<div class="container-lg bg-warning">.container-lg</div>
+		<div class="container-xl bg-info">.container-xl</div>
+		<div class="container-xxl bg-dark">.container-xxl</div>
+	</body>
+</html>

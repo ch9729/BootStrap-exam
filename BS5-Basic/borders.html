@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 파비콘 링크, 부트스트랩CSS, 부트스트랩JS -->
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+
+		<title>모서리</title>
+		<style>
+			div {
+				min-height: 150px;
+				min-width: 150px;
+				margin: 20px;
+				display: inline-block;
+			}
+			body {
+				margin-bottom: 500px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 모서리 추가 -->
+		<div class="border"></div>
+    	<div class="border-top"></div>
+    	<div class="border-bottom"></div>
+    	<div class="border-start"></div>
+    	<div class="border-end"></div>
+    	<div class="border-end border-start border-top"></div>
+
+		<br>
+
+		<!-- 모서리 제거 -->
+		<!-- 0을 작성하면 해당부분 제거 -->
+		<div class="border border-top-0"></div>
+    	<div class="border border-bottom-0"></div>
+   	 	<div class="border border-start-0"></div>
+    	<div class="border border-end-0"></div>
+
+		<br>
+		
+		<!-- 굵기 1~5 -->
+		<div class="border border-5 border-primary"></div>
+    	<div class="border border-5 border-secondary"></div>
+    	<div class="border border-5 border-success"></div>
+    	<div class="border border-5 border-danger"></div>
+   		<div class="border border-5 border-warning"></div>
+    	<div class="border border-5 border-info"></div>
+    	<div class="border border-5 border-light"></div>
+    	<div class="border border-5 border-dark"></div>
+    	<div class="border border-5 border-white"></div>
+
+    	<br>
+
+		<!-- 모서리 둥굴게 -->
+		<div class="border rounded"></div>
+    	<div class="border rounded-top"></div>
+    	<div class="border rounded-bottom"></div>
+    	<div class="border rounded-start"></div>
+    	<div class="border rounded-end"></div>
+    	<div class="border rounded-circle"></div>
+    	<div style="width: 400px;" class="border rounded-pill"></div>
+
+		<br>
+
+		<!-- 둥굴기 정도 0~3까지 존재 -->
+		<div class="border rounded-1 border-primary"></div>
+		<div class="border rounded-2 border-primary"></div>
+		<div class="border rounded-3 border-primary"></div>
+		<div class="border rounded-0 border-primary"></div>
+	</body>
+</html>

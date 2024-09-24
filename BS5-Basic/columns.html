@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 파비콘 링크, 부트스트랩CSS, 부트스트랩JS -->
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+
+		<title>컬럼</title>
+		<style>
+			div > div > div {
+				background: #F7941F;
+				padding: 1rem;
+				border: 1px solid white;
+				font-weight: 600;
+				color: white;
+				border-radius: 7px;
+				margin: 1rem 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 부트스트랩에서 열을 사용시 container > row > col -->
+		<div class="container">
+			<!-- 첫째줄 -->
+			<div class="row">
+				<div class="col">
+					1 of 3
+				</div>
+				<div class="col">
+					2 of 3
+				</div>
+				<div class="col">
+					3 of 3
+				</div>
+			</div>
+			<!-- 둘째줄 -->
+			<div class="row">
+				<div class="col">
+					1 of 2
+				</div>
+				<div class="col">
+					2 of 2
+				</div>
+			</div>
+		</div>
+
+		<!-- 열의 길이가 다를경우 (항상 합은 12까지) -->
+		<div class="container">
+			<div class="row">
+				<div class="col-8">8/12</div>
+				<div class="col-4">4/12</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					1 of 3
+				</div>
+				<div class="col-auto">
+					Variable width content
+				</div>
+				<div class="col">
+					2 of 3
+				</div>
+			</div>
+		</div>
+
+		<!-- 반응형 -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+				<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row row-cols-2">
+				<div class="col">column</div>
+				<div class="col">column</div>
+				<div class="col">column</div>
+				<div class="col">column</div>
+			</div>
+		</div>
+	</body>
+</html>

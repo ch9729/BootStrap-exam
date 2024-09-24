@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 파비콘 링크, 부트스트랩CSS, 부트스트랩JS -->
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+
+		<title>사이즈</title>
+		<style>
+			div {
+				margin: 10px;
+				color: white;
+				padding: 5px;
+				/* min-height: 50px; */
+				/* display: inline-block; */
+			}
+	
+			body {
+				margin-bottom: 500px;
+			}
+		</style>
+	
+	</head>
+
+	<body>
+		<!-- 상대적인 사이즈 -->
+		<!-- 가로 25, 50, 75 %, auto-->
+		<div class="bg-primary w-25">Width 25%</div>
+    	<div class="bg-primary w-50">Width 50%</div>
+    	<div class="bg-primary w-75">Width 75%</div>
+    	<div class="bg-primary w-auto">Width auto</div>
+
+		<!-- 세로 25, 50, 75%, auto-->
+		<div class="bg-dark" style="height: 300px;">
+			<div class="bg-primary d-inline-block h-25">Height 25%</div> 
+			<div class="bg-primary d-inline-block h-50">Height 50%</div> 
+			<div class="bg-primary d-inline-block h-75">Height 75%</div> 
+			<div class="bg-primary d-inline-block h-auto">Height auto</div> 
+		</div>
+
+		<!-- 절대 사이즈(뷰포트로 화면사이즈로 설정) -->
+		<div class="bg-primary vh-100"></div>
+    	<div class="bg-primary min-vh-100"></div>
+
+    	<div class="bg-primary vw-100"></div>
+    	<div class="bg-primary min-vw-100"></div>
+		<!-- 절대 사이즈 css width:100vw, height:100vh -->
+	</body>
+</html>
