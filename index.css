@@ -2,9 +2,14 @@
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .navbar {
-    height: 200px;
-    background-color: yellow;
+    height: 140px;
+    width: 80%;
     display: flex;
     justify-content: space-around;
 }
@@ -32,7 +37,7 @@
     width: 30px;
 }
 
-.log-box a{
+.log-box a {
     display: flex;
     flex-direction: column;
     margin: 0 10px;
@@ -47,6 +52,166 @@
     display: flex;
     justify-content: space-between;
     height: 50px;
-    background-color: red;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 70%;
 }
 
+/* 
+네비게이션 바 목록 구성 */
+.nav ul {
+    list-style: none;
+}
+
+
+.nav ul li {
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 2px 5px;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+
+    display: none;
+    z-index: 99;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin: 2px 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.search input {
+    margin-top: 5px;
+    height: 70%;
+    width: 210px;
+    border: none;
+}
+
+main {
+    width: 100%;
+}
+
+.video {
+    background-color: black;
+    text-align: center;
+    border-top: 2px solid orangered;
+}
+
+
+.video-text {
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+    position: absolute;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.72);
+    top: 45%;
+    left: 26%;
+    font-size: 40px;
+    text-align: left;
+}
+
+.chart {
+    height: 500px;
+    background-color: #f9f9f9;
+}
+
+.content {
+    margin: 0 auto;
+    display: flex;
+    padding: 70px;
+    font-size: 30px;
+    width: 70%;
+
+}
+
+.plus button {
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.movie-img img {
+    width: 170px;
+    border-radius: 10px;
+}
+
+.movie-img img:hover {
+    filter: brightness(50%);
+}
+
+.movie-img {
+    display: flex;
+    width: 60%;
+}
+
+.img-name {
+    margin-top: 2px;
+    text-align: center;
+}
+
+.percent {
+    border-right: 1px solid #444444;
+    padding-right: 10px;
+    color: #444444;
+}
+
+.name {
+    font-size: 18px;
+}
+
+.fix-btn {
+    position: fixed;
+    bottom: 10%;
+    right: 20%;
+}
+
+.event {
+    width: 60%;
+}
+
+.event-title {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.event-poster {
+    display: flex;
+}
+
+.event-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-poster img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.event-poster img:hover {
+    transform: scale(1.2);
+}
