@@ -19,3 +19,6 @@
     - 모달
     - 스피너
     - 스크롤스파이
+
+- 공부자료
+    - [링크](https://velog.io/@drv98/series/%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9)
