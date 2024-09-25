@@ -11,10 +11,266 @@
 
 		<title>오로라투어 - Travel with us</title>
 		<style>
+			.c-item {
+				height: 480px;
+			}
+
+			.c-img {
+				height: 100%;
+				object-fit: cover;
+				filter: brightness(0.6);   /* 투명도 (0어두운 이미지 100원래 이미지) */
+			}
+
+			.overview {
+				height: 180px;
+				background-color: #d3dae1;
+			}
+
+			.overview i {
+				font-size: 1.2em;
+				color: crimson;
+			}
+
+			#package img {
+				height: 250px;
+				object-fit: cover;
+			}
+
+			.active {
+				color: red !important;
+			}
 		</style>
 	</head>
 
-	<body>
+	<!-- 스크롤 내릴시 nav바 색상 변환 -->
+	<body data-bs-spy="scroll" data-bs-target="#nav-scroll">
+		<!-- 네브바 시작 -->
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">🌠오로라투어</a>
 
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" href="#package">패키지</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#faq">FAQ</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- 캐로셀 섹션 시작 -->
+		<section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+
+			<div class="carousel-inner">
+				<div class="carousel-item active c-item">
+					<img src="./images/pic1.jpg" class="d-block w-100 c-img" alt="Slide 1" />
+					<!-- 내용-->
+					<div class="carousel-caption top-0 mt-4">
+						<p class="mt-5 fs-3 text-uppercase">Discover the hidden world</p>
+						<h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+						<button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"data-bs-target="#btn">
+							투어 예약
+						</button>
+					</div>
+				</div>
+				<div class="carousel-item c-item">
+					<img src="./images/pic2.jpg" class="d-block w-100 c-img" alt="Slide 2" />
+					<!-- 내용-->
+					<div class="carousel-caption top-0 mt-4">
+						<p class="mt-5 fs-3 text-uppercase">the season has arrived</p>
+						<h1 class="display-1 fw-bolder text-capitalize">3 Available Tours</h1>
+						<button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"data-bs-target="#btn">
+							투어 예약
+						</button>
+					</div>
+				</div>
+				<div class="carousel-item c-item">
+					<img src="./images/pic3.jpg" class="d-block w-100 c-img" alt="Slide 3" />
+					<!-- 내용-->
+					<div class="carousel-caption top-0 mt-4">
+						<p class="mt-5 fs-3 text-uppercase">destination activities</p>
+						<h1 class="display-1 fw-bolder text-capitalize">Go Glacier Hiking</h1>
+						<button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"data-bs-target="#btn">
+							투어 예약
+						</button>
+					</div>
+				</div>
+
+				<!-- 양 쪽 캐로셀 버튼 -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">이전</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">다음</span>
+				</button>
+
+				<!-- 인디케이터 아래쪽 버튼 -->
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"></button>
+					<button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+			</div>
+		</section>
+
+		<!-- 모달섹션 시작 -->
+		<section class="modal fade" tabindex="-1" id="btn">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">투어 예약</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					
+					<form>
+						<div class="form-floating mb-3 mt-3 ms-3 me-3">
+							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+							<label for="floatingInput">이메일</label>
+						</div>
+						<div class="form-floating ms-3 me-3 mb-3">
+							<select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+								<option selected>노르웨이 트롬쇠 - 999만원</option>
+								<option value="1">캐나다 엘로나이프 - 899만원</option>
+								<option value="2">알래스카 페어뱅크스 - 789만원</option>
+								<option value="3">핀란드 이발로 - 1299만원</option>
+							</select>
+							<label for="floatingSelect">투어를 선택하세요!</label>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+							<button type="button" class="btn btn-primary">결재하기</button>
+						</div>
+					</form>				
+				</div>
+			</div>
+		</section>
+
+		<!-- 오버뷰섹션 시작 -->
+		<section class="overview d-flex align-items-center">
+			<div class="container-fluid">
+					<div class="row fs-5">
+					<div class="col-lg-4 text-center">
+						<i class="bi bi-airplane-fill me-2"></i>
+						어메이징한 투어 리스트
+					</div>
+					<div class="col-lg-4 text-center">
+						<i class="bi bi-wallet-fill me-2"></i>
+						지금 예약시 5% 할인
+					</div>
+					<div class="col-lg-4 text-center">
+						<i class="bi bi-patch-check-fill me-2"></i>
+						1000번이 넘는 투어 횟수
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="package" class="container py-5">
+			<div class="text-center py-5">
+			  <h2 class="fw-bolder text-uppercase">package</h2>
+			  <p>오로라를 탐험하러 가세요!</p>
+			</div>
+			<div class="row pb-5">
+			  <div class="col-lg-4 col-md-6 mb-4">
+				<div class="card">
+				  <img src="./images/pic1.jpg" alt="" class="card-img-top" />
+				  <div class="card-body">
+					<h5 class="card-title text-center py-2">Lorem ipsum dolor sit amet.</h5>
+					<p class="card-text">
+					  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at illum natus sequi explicabo,
+					  adipisci saepe et. Vero, labore enim.
+					</p>
+					<a href="#" class="btn btn-outline-success">더 알아보기</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-lg-4 col-md-6 mb-4">
+				<div class="card">
+				  <img src="./images/pic2.jpg" alt="" class="card-img-top" />
+				  <div class="card-body">
+					<h5 class="card-title text-center py-2">Lorem ipsum dolor sit amet.</h5>
+					<p class="card-text">
+					  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at illum natus sequi explicabo,
+					  adipisci saepe et. Vero, labore enim.
+					</p>
+					<a href="#" class="btn btn-outline-success">더 알아보기</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-lg-4 col-md-6 mb-4">
+				<div class="card">
+				  <img src="./images/pic3.jpg" alt="" class="card-img-top" />
+				  <div class="card-body">
+					<h5 class="card-title text-center py-2">Lorem ipsum dolor sit amet.</h5>
+					<p class="card-text">
+					  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at illum natus sequi explicabo,
+					  adipisci saepe et. Vero, labore enim.
+					</p>
+					<a href="#" class="btn btn-outline-success">더 알아보기</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+
+		<!-- 자주묻는질문섹션 시작 -->
+		<section id="faq" class="container py-5">
+			<div class="accordion" id="accordionExample">
+				<div class="accordion-item">
+				  <h2 class="accordion-header">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  투어는 얼마나 걸리나요?
+					</button>
+				  </h2>
+				  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					  <p>네 비행기포함 일주일에서 10일 걸립니다.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  비행기 티켓은 포함되어 있나요?
+					</button>
+				  </h2>
+				  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					  <p>네 티켓 포함 가격입니다.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  취소는 언제까지 가능한가요?
+					</button>
+				  </h2>
+				  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					  <p>1주일 이전까지 가능합니다.</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</section>	
+
+		<!-- 푸터섹션 시작 -->
+		<footer class="bg-dark py-5 mt-5">
+			<div class="container text-light text-?">
+				<p class="display-5 mb-3">오로라투어</p>
+				<small>&copy; Copyright by me. All rights reserved.</small>
+			</div>
+		</footer>
 	</body>
 </html>
