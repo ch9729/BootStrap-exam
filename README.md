@@ -28,5 +28,11 @@
         - div 안에 text-center적용
         <img src="img/center2.png">
 
+- nav scroll 적용
+    - <body data-bs-spy="scroll" data-bs-target="#nav-scroll"> 이용
+        - section id 값을 li 내부 href="#id값" 동일하게 설정 시 해당 부분으로 접근 시 효과 발생 
+
+        <img src="img/scroll.gif" width="730px">
+
 - 공부자료
     - [링크](https://velog.io/@drv98/series/%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9)
