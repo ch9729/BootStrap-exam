@@ -45,7 +45,7 @@
 - FAQ
     - 재시작 시 항상 버튼 부분이 파란색 적용이 된 상태
     <img src="img/retry.png">
-    - `button`부분 collapsed 입력으로 해당부분 적용 안됨
+    - `button` 부분 collapsed 입력으로 해당부분 적용 안됨
     <img src="img/retry2.png">
 
 
