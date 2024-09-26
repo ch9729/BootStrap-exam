@@ -38,7 +38,7 @@
         - nav영역 패키지, FAQ 클릭시 해당 섹션으로 이동
 
 - 버튼 클릭 모달 효과
-    - 해당 `button` data-bs-target="#id값" 넣기
+    - 해당 `button` data-bs-toggle="modal" data-bs-target="#id값" 넣기
     - 모달창 section id값 입력
         <img src="img/modal.gif" width="730px">
 
