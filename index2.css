@@ -1,0 +1,33 @@
+.a h5, .a p{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.sub-img {
+    margin-top: 80px;
+}
+
+.percent {
+    padding-right: 10px;
+    border-right: 1px solid silver;
+}
+
+.img-name {
+    text-align: center;
+}
+
+.card {
+    border: none !important;
+}
+
+.movie-card img:hover {
+    filter: brightness(50%);
+}
+
+.event-img img:hover {
+    transform: scale(1.03);
+}
+
+.other .card {
+    border: 1px solid silver !important;
+}

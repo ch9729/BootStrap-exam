@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+}
+
+/* 전체 구도 정렬 */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: black;
+}
+
+.log-main {
+    padding-top: 10px;
+    width: 400px;
+    height: 350px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.log {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.log img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.input input {
+    margin-bottom: 5px;
+}
+
+.find {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.naver-login {
+    text-align: center;
+    width: 70%;
+}
+
+.content {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #fb4357;
+    border: none;
+    height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .log-main {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .find, .naver-login {
+        width: 100%;
+    }
+
+    .find div {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .log-main {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        border-radius: 0;
+    }
+
+    .input input, .btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .find {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .find div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}

@@ -1,5 +1,6 @@
 * {
     margin: 0 auto;
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
 }
 
 a {
@@ -142,11 +143,11 @@ main {
     display: flex;
     padding: 70px;
     font-size: 30px;
-    width: 70%;
+    width: 60%;
 
 }
 
-.plus button {
+.btn-plus {
     font-size: 20px;
     border-radius: 30px;
     background-color: white;
@@ -177,7 +178,7 @@ main {
     color: #444444;
 }
 
-.name {
+.names {
     font-size: 18px;
 }
 
@@ -204,7 +205,7 @@ main {
 .event-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-left: 0;
 }
 
 .event-poster img {
@@ -213,5 +214,302 @@ main {
 }
 
 .event-poster img:hover {
-    transform: scale(1.2);
+    transform: scale(1.03);
+}
+
+.event-name {
+    font-size: 30px;
+}
+
+.event-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.name {
+    margin-left: 30px;
+}
+
+.btn {
+    margin-right: 30px;
+}
+
+.sub-title {
+    margin-left: 0;
+}
+
+.other {
+    display: flex;
+    margin-top: 80px;
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.other-area {
+    width: 300px;
+    height: 350px;
+    border: 1px solid silver;
+    border-radius: 20px;
+}
+
+.other-name {
+    display: flex;
+    margin-top: 25px;
+}
+
+.other-btn {
+    background-color: white;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+.other-names{
+    font-size: 18px;
+}
+
+.other-img-price {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.choose {
+    margin-left: 0;
+    margin-top: 15px;
+    display: flex;
+}
+
+.choose img {
+    width: 75px;
+}
+
+.img-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.other-margin {
+    margin-left: 24px;
+}
+
+.other-btns {
+    margin-right: 24px;
+}
+
+.img-margin {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.price-margin {
+    margin-left: 0;
+}
+
+.announcement {
+    width: 60%;
+    display: flex;
+}
+
+.announcement-other {
+    width: 750px;
+    height: 300px;
+    border: 1px solid silver;
+    border-radius: 30px;
+    display: flex;
+}
+
+.qr {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid silver;
+}
+
+.qr span {
+    color: silver;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.several {
+    width: 75%;
+    height: 100%;
+}
+
+.several-1 {
+    height: 20%;
+    width: 90%;
+    border-bottom: 1px solid silver;
+    display: flex;
+    align-items: center;
+}
+
+.several-1 span button {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.several-2 {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.call {
+    margin-left: 10px;
+}
+
+.time {
+    margin-left: 85px;
+}
+
+.several-2-1{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.several-2-2 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.several-2-3 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.several-2-3 button {
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sale {
+    width: 300px;
+    height: 300px;
+}
+
+.sale img {
+    width: 260px;
+}
+
+footer {
+    height: 200px;
+    background-color: #f8f8f8;
+}
+
+.policy_list{
+    margin-top: 100px;
+    padding-top: 75px;
+    padding-bottom: 10px;
+    display: flex;
+    width: 60%;
+    border-bottom: 1px solid silver;
+}
+
+.company {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.company span {
+    margin: 1px 0;
+}
+
+.fix-btn button {
+    font-size: 25px;
+}
+
+/* 화면 너비가 1024px 이하일 때 적용 */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .log-img img {
+        width: 100px; /* 로고 크기 줄이기 */
+    }
+
+    .log-box a {
+        margin: 0 5px; /* 간격 줄이기 */
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .video-text {
+        font-size: 24px;
+        top: 40%;
+        left: 10%; /* 텍스트 위치 조정 */
+    }
+
+    .movie-img {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .movie-img img {
+        width: 150px; /* 이미지 크기 줄이기 */
+    }
+}
+
+/* 화면 너비가 768px 이하일 때 적용 (모바일용) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+
+    .log-img img {
+        width: 80px; /* 로고 크기 더 줄이기 */
+    }
+
+    .nav ul li {
+        font-size: 18px;
+    }
+
+    .video-text {
+        font-size: 18px;
+        top: 35%;
+        left: 5%; /* 텍스트 위치 더 조정 */
+    }
+
+    .movie-img img {
+        width: 120px; /* 더 작은 이미지 크기 */
+        margin: 5px;
+    }
+
+    .event-poster img {
+        width: 150px;
+    }
+
+    .other-area {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .announcement-other {
+        width: 100%;
+    }
+
+    .policy_list, .company {
+        width: 90%;
+    }
+
+    .fix-btn {
+        bottom: 5%;
+        right: 5%;
+    }
 }
