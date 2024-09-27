@@ -48,6 +48,11 @@
     - `button` 부분 collapsed 입력으로 해당부분 적용 안됨
     <img src="img/retry2.png">
 
+# 웹페이지 크롤링(미완성)
+- 프론트(HTML, CSS, BOOTSTRAP) 클론 경험을 통해 실력 향상
+- [배포]()
 
+
+<hr>
 - 공부자료
     - [링크](https://velog.io/@drv98/series/%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9)
