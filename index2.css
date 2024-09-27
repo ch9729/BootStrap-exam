@@ -1,4 +1,4 @@
-.a h5, .a p{
+a {
     color: black !important;
     text-decoration: none !important;
 }
@@ -30,4 +30,63 @@
 
 .other .card {
     border: 1px solid silver !important;
+}
+
+.contents {
+    height: 260px;
+
+}
+
+.contents-detail {
+    border: 1px solid silver;
+    border-radius: 10px;
+    width: 90%;
+    height: 100%;
+}
+
+.sale img {
+    border-radius: 10px;
+}
+
+.contents-qr {
+    border-left: 1px solid silver;
+}
+
+.footer-text {
+    font-size: 13px;
+}
+
+.footer-text a:hover {
+    color: red !important;
+    text-decoration: underline !important;
+}
+
+.find {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.naver-login {
+    text-align: center;
+    width: 70%;
+}
+
+.btn1 {
+    background-color: #fb4357;
+    border: 1px solid #fb4357;
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.modal-title {
+    font-size: 12px;
+}
+
+.form-impormation {
+    width: 70%;
 }
